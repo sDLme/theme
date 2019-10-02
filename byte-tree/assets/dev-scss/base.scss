@@ -1,0 +1,110 @@
+@import "var";
+
+* {
+  border: 0;
+  box-sizing: border-box;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  margin: auto;
+  outline: none;
+  padding: 0;
+  text-align: inherit;
+}
+
+:after, :before { box-sizing: border-box }
+
+body {
+  background: #f7f7f7;
+  color: $black;
+  font-family: 'GothamNarrow', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: .5px;
+  line-height: 1.75;
+  margin: 0;
+  min-width: 320px;
+  padding: 0;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  transition: .2s color;
+  &:hover { color: $blue }
+}
+
+b, strong { font-weight: 500 }
+
+ul {
+  list-style-position: inside;
+}
+
+.float-l { float: left }
+
+.float-r { float: right }
+
+.text-l { text-align: left }
+
+.text-c { text-align: center }
+
+.text-r { text-align: right }
+
+.text-j { text-align: justify }
+
+.hide { display: none !important }
+
+.show { display: block !important }
+
+.full { width: 100% !important }
+
+.bgi {
+  background: center no-repeat;
+  background-size: cover;
+}
+
+.v-mid {
+  display: table;
+  height: 100%;
+  width: 100%;
+  .vc-mid {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+.block-x {
+  padding-bottom: 100%;
+  position: relative;
+  > * {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  &.b4x3 { padding-bottom: 75% }
+  &.b2x1 { padding-bottom: 50% }
+}
+
+.nowrap {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.row {
+  padding: 0 15px;
+  max-width: $row;
+}
+
+.clr {
+  clear: both;
+  content: "";
+  display: block;
+}
+
